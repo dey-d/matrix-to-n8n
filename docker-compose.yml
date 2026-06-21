@@ -1,0 +1,16 @@
+services:
+  matrix-to-n8n:
+    build:
+      context: .
+    container_name: matrix-to-n8n
+    restart: unless-stopped
+    env_file:
+      - .env
+    environment:
+      MATRIX_STATE_DIR: /data
+    volumes:
+      - matrix-to-n8n-data:/data
+    stop_grace_period: 10s
+
+volumes:
+  matrix-to-n8n-data:
