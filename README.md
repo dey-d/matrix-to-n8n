@@ -209,4 +209,4 @@ If you change the Matrix password, the bridge will only need it if the saved acc
 
 ## License
 
-No explicit license is included yet. Add one before publishing publicly if needed.
+MIT License
